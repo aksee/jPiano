@@ -4,9 +4,10 @@ jPiano
 Keyboard Piano jQuery Plugin
 
 
-First
+## requirement
+`Sound Manager 2` http://www.schillmania.com/projects/soundmanager2/
 
-Example
+## How to use
 
 ```javascript
 $("#piano").jPiano({
@@ -33,6 +34,7 @@ $("#piano").jPiano({
     }
 });
 ```
+
 
 
 ## License
