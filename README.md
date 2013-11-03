@@ -6,7 +6,7 @@ Keyboard Piano jQuery Plugin
 
 Simple Use
 
-```
+```javascript
 $("body").jPiano({
     preferFlash: false,
     soundsDir: "sounds/",
