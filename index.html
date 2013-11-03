@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jpiano by aksee</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jpiano</h1>
+        <p>Keyboard Piano jQuery Plugin</p>
+
+        <p class="view"><a href="https://github.com/aksee/jPiano">View the Project on GitHub <small>aksee/jPiano</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/aksee/jPiano/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/aksee/jPiano/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/aksee/jPiano">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="jpiano" class="anchor" href="#jpiano"><span class="octicon octicon-link"></span></a>jPiano</h1>
+
+<p>Keyboard Piano jQuery Plugin</p>
+
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li>
+<code>Sound Manager 2</code> <a href="http://www.schillmania.com/projects/soundmanager2/">http://www.schillmania.com/projects/soundmanager2/</a>
+</li>
+</ul><h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"#piano"</span><span class="p">).</span><span class="nx">jPiano</span><span class="p">({</span>
+    <span class="nx">preferFlash</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">soundsDir</span><span class="o">:</span> <span class="s2">"sounds/"</span><span class="p">,</span>
+    <span class="nx">debug</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">defaultPressCallback</span><span class="o">:</span> <span class="nx">test</span><span class="p">,</span>
+    <span class="nx">keySounds</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">"a"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"C.wav"</span><span class="p">,</span> <span class="s2">"#key_01"</span><span class="p">],</span>
+      <span class="s2">"w"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"CS.wav"</span><span class="p">,</span> <span class="s2">"#key_02"</span><span class="p">],</span>
+      <span class="s2">"s"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"D.wav"</span><span class="p">,</span> <span class="s2">"#key_03"</span><span class="p">],</span>
+      <span class="s2">"e"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"DS.wav"</span><span class="p">,</span> <span class="s2">"#key_04"</span><span class="p">],</span>
+      <span class="s2">"d"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"E.wav"</span><span class="p">,</span> <span class="s2">"#key_05"</span><span class="p">],</span>
+      <span class="s2">"f"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"F.wav"</span><span class="p">,</span> <span class="s2">"#key_06"</span><span class="p">],</span>
+      <span class="s2">"t"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"FS.wav"</span><span class="p">,</span> <span class="s2">"#key_07"</span><span class="p">],</span>
+      <span class="s2">"g"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"G.wav"</span><span class="p">,</span> <span class="s2">"#key_08"</span><span class="p">],</span>
+      <span class="s2">"y"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"GS.wav"</span><span class="p">,</span> <span class="s2">"#key_09"</span><span class="p">],</span>
+      <span class="s2">"h"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"A.wav"</span><span class="p">,</span> <span class="s2">"#key_10"</span><span class="p">],</span>
+      <span class="s2">"u"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"AS.wav"</span><span class="p">,</span> <span class="s2">"#key_11"</span><span class="p">],</span>
+      <span class="s2">"j"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"B.wav"</span><span class="p">,</span> <span class="s2">"#key_12"</span><span class="p">],</span>
+      <span class="s2">"k"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"2C.wav"</span><span class="p">,</span> <span class="s2">"#key_13"</span><span class="p">],</span>
+      <span class="s2">"o"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"2CS.wav"</span><span class="p">,</span> <span class="s2">"#key_14"</span><span class="p">],</span>
+      <span class="s2">"l"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"2D.wav"</span><span class="p">,</span> <span class="s2">"#key_15"</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>(The MIT License)</p>
+
+<p>Copyright (c) 2013 Ali Sait TEKE &lt;<a href="mailto:alisaitt@gmail.com">alisaitt@gmail.com</a>&gt;</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/aksee">aksee</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
