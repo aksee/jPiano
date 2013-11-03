@@ -6,6 +6,7 @@ Keyboard Piano jQuery Plugin
 
 Simple Use
 
+```
 $("body").jPiano({
     preferFlash: false,
     soundsDir: "sounds/",
@@ -29,3 +30,4 @@ $("body").jPiano({
       "l": ["2D.wav", "#key_15"]
     }
 });
+```
