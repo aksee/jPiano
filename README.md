@@ -4,8 +4,8 @@ jPiano
 Keyboard Piano jQuery Plugin
 
 
-## requirement
-`Sound Manager 2` http://www.schillmania.com/projects/soundmanager2/
+## Requirements
+- `Sound Manager 2` http://www.schillmania.com/projects/soundmanager2/
 
 ## How to use
 
