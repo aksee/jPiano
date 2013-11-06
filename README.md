@@ -5,7 +5,7 @@ Keyboard Piano jQuery Plugin
 
 
 ## Requirements
-- `#Sound Manager 2` http://www.schillmania.com/projects/soundmanager2/
+- `Sound Manager 2` http://www.schillmania.com/projects/soundmanager2/
 
 ## How to use
 
